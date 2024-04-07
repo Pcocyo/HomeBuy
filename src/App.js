@@ -1,13 +1,13 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import {ChakraProvider} from '@chakra-ui/react'
-import Navigation from './Navigation';
+import {ChakraProvider} from '@chakra-ui/react' ;
+import Home from './Component/Home';
 const App = () => {
   return (
     <ChakraProvider>
-    <BrowserRouter>
+    <BrowserRouter> 
       <Routes>
-        <Route path="/" element={<Navigation/>}></Route>
+        <Route path="/" element={<Home/>}></Route>
       </Routes>
     </BrowserRouter>
   </ChakraProvider>
